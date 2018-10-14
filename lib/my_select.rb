@@ -9,7 +9,12 @@ def my_select(collection)
   collection 
 end
 
-
+ new_array = []
+  while i < array.length
+    new_array << yield(array[i])
+    i += 1
+  end
+  new_array
 
 
 #The .select method returns a new collection containing all of the elements in the submitted collection for which the block's conditional is true:
